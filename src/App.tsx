@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react';
+import './tailwind.css';
+import reactotron from 'Util/Config/Reactotron';
+import Layout from 'Containers/Layout';
+import { BrowserRouter, Router } from 'react-router-dom';
+import Routes from 'Routes';
+import history from 'Util/History';
 
-function App() {
+const App: FC = () => {
+  reactotron.log!('test');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Router history={history}>
+        <Routes />
+      </Router>
+    </Layout>
   );
-}
+};
 
 export default App;
