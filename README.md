@@ -1,8 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Used Technologies
 
-In the project directory, you can run:
+* Typescript
+* Craco
+* AntD
+* Tailwind
+* Redux Toolkit
+* Emotion with @emotion/babel-preset-css-prop
 
 ### `npm start`
 
